@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  header {
+  height: 70px;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header .nav__logo {
+  color: black;
+  font-size: 32px;
+  font-family: Poppins;
+}
+header .nav-right {
+  display: flex;
+}
+header .left-link {
+  display: flex;
+  align-items: center;
+}
+header .left-link-item {
+  padding-right: 15px;
+}
+header .left-link-item a {
+  color: black;
+  font-family: Poppins;
+  transition: 0.4s linear;
+}
+header .left-link-item a:hover {
+  color: rgb(95, 207, 128);
+}
+header .button {
+  color: white;
+  border-radius: 40px;
+  background-color: red;
+  padding: 8px 25px;
+  margin-left: 22px;
+  border: none;
+}
+.drop-down{
+    position: relative;
+    
+}
+.drop-down>ul{
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    width: 200px;
+    top: 55px;
+    padding: 10px 20px;
+    list-style: none;
+    border-radius: 10px;
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+.drop-down:hover>ul{
+    top: 30px;
+    visibility: visible;
+    opacity: 1;
+}
+.drop-down>ul li{
+    padding: 10px 0px;
+   
+}
+.drop-down>ul li a{
+    padding: 0 !important;
+}
+   
+
+
